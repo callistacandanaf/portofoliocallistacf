@@ -1,0 +1,634 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✦ Portfolio — My Work</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body class="port-page">
+
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <div class="loader-bg"></div>
+    <div class="loader-content">
+      <div class="loader-stars">
+        <span class="star s1">✦</span>
+        <span class="star s2">★</span>
+        <span class="star s3">✦</span>
+        <span class="star s4">✩</span>
+        <span class="star s5">★</span>
+        <span class="star s6">✦</span>
+      </div>
+      <div class="loader-logo">
+        <span class="loader-name">Callista</span>
+        <span class="loader-sub">✦ Portfolio ✦</span>
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar">
+          <div class="loader-bar-fill"></div>
+        </div>
+        <span class="loader-percent">0%</span>
+      </div>
+      <p class="loader-text">Loading your experience...</p>
+    </div>
+  </div>
+
+  <!-- CURSOR FOLLOWER -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled">
+    <div class="nav-logo">
+      <span class="nav-logo-star">✦</span>
+      <span class="nav-logo-name">Callista<em>.</em></span>
+      <span class="nav-logo-tag">portfolio</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">
+        <span class="nav-link-dot"></span>Home
+      </a></li>
+      <li><a href="portfolio.html" class="active">
+        <span class="nav-link-dot"></span>Portfolio
+      </a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="nav-badge">✦ Available</span>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="port-header">
+    <div class="port-header-bg">
+      <span class="ph-star ps1">✦</span>
+      <span class="ph-star ps2">★</span>
+      <span class="ph-star ps3">✦</span>
+      <span class="ph-star ps4">★</span>
+    </div>
+    <div class="port-header-inner">
+      <p class="sec-tag center">✦ Selected Work</p>
+      <h1 class="port-title">
+        <span class="pt-line">Things I've</span>
+        <span class="pt-line italic-grad">made &amp; written.</span>
+      </h1>
+      <p class="port-subtitle">Essays · Stories · Content · More</p>
+    </div>
+    <div class="port-marquee">
+      <div class="pm-track">
+        <span>Graphic Design</span><span class="pm-dot">✦</span>
+        <span>Video Editing</span><span class="pm-dot">★</span>
+        <span>UI/UX Design</span><span class="pm-dot">✦</span>
+        <span>Content Creation</span><span class="pm-dot">★</span>
+        <span>Visual Design</span><span class="pm-dot">✦</span>
+        <span>Creative Projects</span><span class="pm-dot">★</span>
+        <span>Swimming</span><span class="pm-dot">✦</span>
+        <span>Graphic Design</span><span class="pm-dot">✦</span>
+        <span>Video Editing</span><span class="pm-dot">★</span>
+        <span>UI/UX Design</span><span class="pm-dot">✦</span>
+        <span>Content Creation</span><span class="pm-dot">★</span>
+        <span>Visual Design</span><span class="pm-dot">✦</span>
+        <span>Creative Projects</span><span class="pm-dot">★</span>
+        <span>Swimming</span><span class="pm-dot">✦</span>
+        <span>Graphic Design</span><span class="pm-dot">✦</span>
+        <span>Video Editing</span><span class="pm-dot">★</span>
+        <span>UI/UX Design</span><span class="pm-dot">✦</span>
+        <span>Content Creation</span><span class="pm-dot">★</span>
+        <span>Visual Design</span><span class="pm-dot">✦</span>
+        <span>Creative Projects</span><span class="pm-dot">★</span>
+        <span>Swimming</span><span class="pm-dot">✦</span>
+        <span>Graphic Design</span><span class="pm-dot">✦</span>
+        <span>Video Editing</span><span class="pm-dot">★</span>
+        <span>UI/UX Design</span><span class="pm-dot">✦</span>
+        <span>Content Creation</span><span class="pm-dot">★</span>
+        <span>Visual Design</span><span class="pm-dot">✦</span>
+        <span>Creative Projects</span><span class="pm-dot">★</span>
+        <span>Swimming</span><span class="pm-dot">✦</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- A GLIMPSE OF MY WORK -->
+  <main class="projects-wrap">
+
+    <div class="projects-header reveal">
+      <p class="sec-tag center">✦ A Glimpse of My Work</p>
+      <h2 class="projects-title">Things I've <em>made.</em></h2>
+      <p class="projects-sub">Click any project to see the result ✦</p>
+    </div>
+
+    <!-- FILTER TABS -->
+    <div class="proj-filters reveal">
+      <button class="proj-filter active" data-filter="all">All ✦</button>
+      <button class="proj-filter" data-filter="design">Design</button>
+      <button class="proj-filter" data-filter="web">Web</button>
+    </div>
+
+    <!-- PROJECT GRID -->
+    <div class="projects-grid">
+
+      <article class="proj-card reveal" data-cat="web">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span></div>
+            <span class="proj-num">⋆˚꩜｡</span>
+          </div>
+          <h3>Website Personal Branding</h3>
+          <p>Membuat website statis tentang personal branding.</p>
+          <a href="https://personalbrandingcallistacf.vercel.app/" target="_blank" rel="noopener" class="proj-cta">Lihat Project <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Poster</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Poster Classmeeting</h3>
+          <p>Poster class meeting untuk feeds Potret7.</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design2.jpg')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Poster</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Poster Rules Classmeeting</h3>
+          <p>Poster rules classmeeting agar memudahkan peserta untuk mengingat aturan yang berlaku.</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design3.jpg')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="web">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span></div>
+            <span class="proj-num">⋆˚꩜｡</span>
+          </div>
+          <h3>Website Robloxin Aja</h3>
+          <p>Membuat website statis robloxin aja dengan tim.</p>
+          <a href="https://robloxinaja.pages.dev/" target="_blank" rel="noopener" class="proj-cta">Lihat Project <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Poster</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Poster Merchandise</h3>
+          <p>Poster Merchandise untuk even Abhinava (ulang tahun STEMBA ke-55) </p>
+          <button class="proj-cta" onclick="openLightbox('foto/design8.png')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>ID Card Panitia</h3>
+          <p>ID Card panitia yang digunakan pada saat even Abhinava (ulang tahun STEMBA ke-55).</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design9.png')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Poster Danusan</h3>
+          <p>Poster yang digunakan untuk DEPOSIS.</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design10.jpg')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Poster Danusan</h3>
+          <p>Poster yang digunakan untuk DEPOSKA.</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design11.png')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Poster Danusan</h3>
+          <p>Poster yang digunakan untuk DEPOSIS.</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design12.png')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Poster Danusan</h3>
+          <p>Poster yang digunakan untuk DEPOSIS.</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design13.png')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Poster Danusan</h3>
+          <p>Poster yang digunakan untuk DEPOSIS.</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design14.png')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Poster Danusan</h3>
+          <p>DPoster yang digunakan untuk DEPOSIS.</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design15.png')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Poster Hari Kemerdekaan</h3>
+          <p>Poster dalam rangka memperingati hari kemerdekaan Republik Indonesia.</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design16.png')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Menfess & Songfess</h3>
+          <p>Menfess & Songfess untuk story instagram kelas</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design17.png')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Livereport</h3>
+          <p>Design livereport yang digunakan pada saat even classmeeting.</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design18.png')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Frame Photobooth</h3>
+          <p>Design frame photooboth yang digunakan pada saat even hari kartini.</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design19.png')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Frame Photobooth</h3>
+          <p>Design frame photooboth yang digunakan pada saat even classmeeting.</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design20.png')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Frame Livereport</h3>
+          <p>Design livereport yang digunakan pada saat even hari guru</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design21.png')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Infografis</h3>
+          <p>Infografis agama islam tentang bijak bermedia sosial.</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design22.png')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Infografis</h3>
+          <p>Infografis tentang mindset dalam dunia teknik.</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design23.jpg')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Katalog</h3>
+          <p>Design katalog totebag.</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design24.png')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>Plakat Juara</h3>
+          <p>Design plakat juara mobile legend pada saat even classmeeting.</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design25.png')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>MMT</h3>
+          <p>Design MMT yang digunakan pada saat even Abhinava (ulang tahun STEMBA ke-55).</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design26.png')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="design">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">Canva</span><span class="proj-tag">Design</span></div>
+            <span class="proj-num">─⋆𐙚</span>
+          </div>
+          <h3>MMT</h3>
+          <p>Design MMT yang digunakan pada saat even Abhinava (ulang tahun STEMBA ke-55).</p>
+          <button class="proj-cta" onclick="openLightbox('foto/design31.jpg')">Lihat Design <span>✦</span></button>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="web">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">IoT</span><span class="proj-tag">Arduino IDE</span></div>
+            <span class="proj-num">⋆˚꩜｡</span>
+          </div>
+          <h3>IoT Smart Garden</h3>
+          <p>Membuat project IoT dengan tema smart garden dengan tim.</p>
+          <a href="https://drive.google.com/file/d/19lMrcrcD2ZF7QuZEvFl0rzOmX5ELT00c/view?usp=drivesdk" target="_blank" rel="noopener" class="proj-cta">Lihat Project <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal" data-cat="web">
+        <div class="proj-body">
+          <div class="proj-card-top">
+            <div class="proj-tags"><span class="proj-tag">s.id</span><span class="proj-tag">Online Shop</span></div>
+            <span class="proj-num">⋆˚꩜｡ </span>
+          </div>
+          <h3>⌗BarbieCloud⋆˚𝜗𝜚˚⋆</h3>
+          <p>Online shop aesthetic via platform s.id.</p>
+          <a href="https://s.id/barbiecloud" target="_blank" rel="noopener" class="proj-cta">Lihat Project <span>→</span></a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- SEE ALL BUTTON -->
+    <div class="proj-see-all-wrap">
+      <button class="proj-see-all" id="seeAllBtn">See All Projects ✦</button>
+    </div>
+
+  </main>
+
+  <!-- MY ACHIEVEMENTS -->
+  <section class="achievements">
+    <div class="ach-header reveal">
+      <p class="sec-tag center">✦ My Achievements</p>
+      <h2 class="ach-title">Certificates &amp; <em>Awards.</em></h2>
+      <p class="ach-sub">18 achievements ✦</p>
+    </div>
+
+    <div class="ach-uniform-grid">
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam1.jpg')">
+        <div class="ach-u-img"><img src="foto/piagam1.jpg" alt="Piagam 1" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2022</span><span>🥉</span></div><h3>Krap Taruna se-Jawa Tengah Bupati Cup</h3><p>Juara 3 · 100 M Gaya Punggung Putri</p></div>
+      </div>
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam2.jpg')">
+        <div class="ach-u-img"><img src="foto/piagam2.jpg" alt="Piagam 2" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2025</span><span>🏆</span></div><h3>IT Essentials</h3><p>CISCO Networking Academy</p></div>
+      </div>
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam3.jpg')">
+        <div class="ach-u-img"><img src="foto/piagam3.jpg" alt="Piagam 3" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2025</span><span>🏆</span></div><h3>Hour Of Code</h3><p>Code.org</p></div>
+      </div>
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam4.jpg')">
+        <div class="ach-u-img"><img src="foto/piagam4.jpg" alt="Piagam 4" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2026</span><span>🏆</span></div><h3>Java Fundamentals - English</h3><p>Oracle Academy</p></div>
+      </div>
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam5.jpg')">
+        <div class="ach-u-img"><img src="foto/piagam5.jpg" alt="Piagam 5" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2017</span><span>🥈</span></div><h3>Kejuaraan Renang Antar Pelajar Wilayah</h3><p>Juara 2 · 100 M Gaya Bebas Putri</p></div>
+      </div>
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam6.jpg')">
+        <div class="ach-u-img"><img src="foto/piagam6.jpg" alt="Piagam 6" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2017</span><span>🥉</span></div><h3>Kejuaraan Renang Antar Pelajar Wilayah</h3><p>Juara 3 · 50 M Gaya Bebas Putri</p></div>
+      </div>
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam7.jpg')">
+        <div class="ach-u-img"><img src="foto/piagam7.jpg" alt="Piagam 7" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2017</span><span>🥉</span></div><h3>Kejuaraan Renang Antar Pelajar Wilayah</h3><p>Juara 3 · 1000 M Gaya Bebas Putri</p></div>
+      </div>
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam8.jpg')">
+        <div class="ach-u-img"><img src="foto/piagam8.jpg" alt="Piagam 8" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2017</span><span>🥈</span></div><h3>Kejuaraan Renang Antar Pelajar Wilayah</h3><p>Juara 2 · 1000 M Gaya Dada Putri</p></div>
+      </div>
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam9.jpg')">
+        <div class="ach-u-img"><img src="foto/piagam9.jpg" alt="Piagam 9" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2019</span><span>🥈</span></div><h3>Pekan Olahraga Pelajar Daerah (POPDA)</h3><p>Juara 2 · 200 M Gaya Ganti Perorangan Putri</p></div>
+      </div>
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam10.jpg')">
+        <div class="ach-u-img"><img src="foto/piagam10.jpg" alt="Piagam 10" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2019</span><span>🥇</span></div><h3>Pekan Olahraga Pelajar Daerah (POPDA)</h3><p>Juara 1 · 100 M Gaya Bebas Putri</p></div>
+      </div>
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam11.jpg')">
+        <div class="ach-u-img"><img src="foto/piagam11.jpg" alt="Piagam 11" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2019</span><span>🥈</span></div><h3>Pekan Olahraga Pelajar Daerah (POPDA)</h3><p>Juara 2 · 200 M Gaya Bebas Putri</p></div>
+      </div>
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam12.jpg')">
+        <div class="ach-u-img"><img src="foto/piagam12.jpg" alt="Piagam 12" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2019</span><span>🥈</span></div><h3>Pekan Olahraga Pelajar Daerah (POPDA)</h3><p>Juara 2 · 100 M Gaya Dada Putri</p></div>
+      </div>
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam13.jpg')">
+        <div class="ach-u-img"><img src="foto/piagam13.jpg" alt="Piagam 13" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2020</span><span>🥇</span></div><h3>Pekan Olahraga Pelajar Daerah (POPDA)</h3><p>Juara 1 · 50 M Gaya Bebas Putri</p></div>
+      </div>
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam14.jpg')">
+        <div class="ach-u-img"><img src="foto/piagam14.jpg" alt="Piagam 14" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2020</span><span>🥈</span></div><h3>Pekan Olahraga Pelajar Daerah (POPDA)</h3><p>Juara 2 · 200 M Gaya Bebas Putri</p></div>
+      </div>
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam15.jpg')">
+        <div class="ach-u-img"><img src="foto/piagam15.jpg" alt="Piagam 15" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2020</span><span>🥇</span></div><h3>Pekan Olahraga Pelajar Daerah (POPDA)</h3><p>Juara 1 · 100 M Gaya Bebas Putri</p></div>
+      </div>
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam16.jpg')">
+        <div class="ach-u-img"><img src="foto/piagam16.jpg" alt="Piagam 16" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2020</span><span>🥈</span></div><h3>Pekan Olahraga Pelajar Daerah (POPDA)</h3><p>Juara 2 · 100 M Gaya Punggung Putri</p></div>
+      </div>
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam17.jpg')">
+        <div class="ach-u-img"><img src="foto/piagam17.jpg" alt="Piagam 17" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2020</span><span>🥈</span></div><h3>Pekan Olahraga Pelajar Daerah (POPDA)</h3><p>Juara 2 · 200 M Gaya Bebas Putri</p></div>
+      </div>
+
+      <div class="ach-u-card reveal" onclick="openLightbox('foto/piagam18.png')">
+        <div class="ach-u-img"><img src="foto/piagam18.png" alt="Piagam 18" /><div class="ach-overlay"><span>⛶ Lihat</span></div></div>
+        <div class="ach-u-body"><div class="ach-u-top"><span class="ach-year-badge">2026</span><span>🏆</span></div><h3>Program Paham AI</h3><p>Senopati Academy</p></div>
+      </div>
+
+    </div>
+  </section>
+    <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightbox-img" src="" alt="Certificate" />
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-marquee">
+      <div class="footer-marquee-track">
+        <span>Let's work together</span><span class="fmx">✦</span>
+        <span>Get in touch</span><span class="fmx">★</span>
+        <span>Let's create something</span><span class="fmx">✦</span>
+        <span>Available now</span><span class="fmx">★</span>
+        <span>Let's work together</span><span class="fmx">✦</span>
+        <span>Get in touch</span><span class="fmx">★</span>
+        <span>Let's create something</span><span class="fmx">✦</span>
+        <span>Available now</span><span class="fmx">★</span>
+        <span>Let's work together</span><span class="fmx">✦</span>
+        <span>Get in touch</span><span class="fmx">★</span>
+        <span>Let's create something</span><span class="fmx">✦</span>
+        <span>Available now</span><span class="fmx">★</span>
+        <span>Let's work together</span><span class="fmx">✦</span>
+        <span>Get in touch</span><span class="fmx">★</span>
+        <span>Let's create something</span><span class="fmx">✦</span>
+        <span>Available now</span><span class="fmx">★</span>
+      </div>
+    </div>
+
+    <div class="footer-main">
+      <div class="footer-heading-wrap">
+        <span class="footer-star-l">✦</span>
+        <h2 class="footer-cta">
+          <span class="fct-line1">Let's work</span>
+          <span class="fct-line2"><em>together.</em></span>
+        </h2>
+        <span class="footer-star-r">★</span>
+      </div>
+      <a href="mailto:youremail@email.com" class="footer-email">
+        <span class="footer-email-icon">✉</span>
+        callistacandanaf@gmail.com
+      </a>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/callistacandana._" target="_blank" rel="noopener" aria-label="Instagram" class="footer-social">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+          <span>Instagram</span>
+        </a>
+        <a href="https://www.tiktok.com/@callistaacf" target="_blank" rel="noopener" aria-label="TikTok" class="footer-social">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/>
+          </svg>
+          <span>TikTok</span>
+        </a>
+        <a href="https://youtube.com/@callistacandana" target="_blank" rel="noopener" aria-label="YouTube" class="footer-social">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.58 31.58 0 0 0 0 12a31.58 31.58 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14C4.46 20.5 12 20.5 12 20.5s7.54 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.58 31.58 0 0 0 24 12a31.58 31.58 0 0 0-.5-5.81zM9.75 15.5V8.5l6.25 3.5-6.25 3.5z"/>
+          </svg>
+          <span>YouTube</span>
+        </a>
+      </div>
+      <p class="footer-copy">© 2026 Callista ✦ All rights reserved.</p>
+    </div>
+
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="loading.js"></script>
+  <script src="portfolio.js"></script>
+</body>
+</html>
